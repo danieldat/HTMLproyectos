@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Prueba</title>
+
+    <style>
+
+        body {width:90%;
+              margin:auto;
+              background-color:#fff2dc;
+        }
+
+
+        header {background-color:#0009ae;
+                width:100%;
+                height:100px;
+            
+        }
+
+        section{background-color:deepskyblue;
+                float:left;
+                width:70%;
+                height:650px;
+        }
+
+        aside {background-color:#0009ae;
+               float:left;
+               width:23%;
+               height:650px;
+        }
+
+
+        #lado{background-color:#0009ae;
+               float:left;
+               width:7%;
+               height:650px;
+
+        }
+
+
+
+        footer{background-color:#0009ae;
+               width:100%;
+               float:left;
+              
+        }
+
+        .juegos{width:30%;
+                float:left;
+                margin:4%;
+                
+              
+        }
+
+        .ljuegos{width:35%;
+                float:left;
+                margin:3%;
+                margin-left:9%;
+                display:none;
+              
+        }
+
+
+
+        .smash{width:70%;
+               margin:10%;
+        }
+
+
+
+        .djuego{width:45%;
+                height:160px;
+                
+                float:left;
+        }
+
+
+        div.djuego:hover {background-color:yellow;
+                       
+        }
+           
+        div.djuego{
+                   border:10px solid white;
+
+        }
+        section div{margin:1%;
+                    width:100%;
+                 
+
+        }
+       
+                   
+          h2{text-align:center;}
+          h1{text-align:left;
+             color:yellow;
+             font-size:70px;
+             float:left;
+             margin:2%;
+          
+             
+          }
+       #pac{width:50px;
+            float:right;
+            margin:3%;
+          
+            
+       }
+       #cabeza{width:40%;
+               float:left; 
+               background-color:#0009ae;
+               height:100px;
+       }
+
+       #cabe1{width:60%;
+              float:left;
+              background-color:#0009ae;;
+              height:100px;
+       }
+
+
+       #coment{margin-left:20%;}
+
+       aside div+div{background-color:yellow;
+                     float:left;
+                     width:100%;
+                     height:30%;
+       }
+
+       aside div{float:left;
+                 width:100%;
+                 height:60%;
+       }
+
+      #total{font-size:100px;
+             margin:10%;
+      }
+
+      img.despues{margin:10%;
+                  width:40%;
+                  margin-left:5%;
+
+      }
+
+      footer div{background:white;
+                 margin:5%;
+                 float:left;
+                 width:90%;
+                 display:none;
+
+      }
+
+      footer img{float:left;
+                 
+
+      }
+    
+    footer div p{margin:4%;
+                 text-align:center;
+               
+    }
+
+    footer div h2{padding-top:7%;
+                  font-size:40px;
+                  text-align:center;
+    }
+      
+    div.pago{float:left;
+                
+                  width:100%;
+                  height:10%;
+                  background-color:yellow;
+    }
+
+  #boton{height:100%;
+         width:100%;
+         background-color:#d8d8d8;
+  }
+  #pago{
+        background-color:deepskyblue;
+       height:100%;
+       border:15px  solid white;
+       border-radius:30px 30px;
+
+  }
+  #datos{
+         background-color:#d8d8d8;
+         width:50%;
+        
+ 
+        float:left;
+        margin:0%;
+  }
+    #datoss{
+         background-color:#d8d8d8;
+         width:50%;
+       
+        float:left;
+        margin:0;
+  }
+  fieldset{height:100px;
+           border-radius:30px 30px;
+           border-color:white;
+
+  }
+  #estado{width:100%;
+          margin:0;
+         
+           background-color:#d8d8d8;
+  }
+
+  progress{width:100%;
+           height:50%;
+
+  }
+
+  #paga{width:90%;
+        margin-left:5%;
+        height:40%;
+
+  }
+
+  #pp{
+         float:left;
+         width:50%;
+         background-color:#d8d8d8;
+         margin:0;
+  }
+   #ppp{
+         float:left;
+         width:50%;
+         background-color:#d8d8d8;
+         margin:0;
+  }
+
+   #tot{margin:5%;
+        font-size:50px;
+
+   }
+
+    label { float:left;
+            width:20%;
+
+        }
+   
+
+    </style>
+
+    <script>
+        var banjo = 0;
+        var donkey = 0;
+        var ocarina = 0;
+        var goofi = 0;
+        var blastoise =0;
+        var mario =0;
+
+
+
+
+
+        function compradonkey() {
+            document.getElementById('donkey').style.display = 'block';
+             donkey = 60;
+        }
+         function comprabanjo() {
+             document.getElementById('banjo').style.display = 'block';
+             banjo=50;
+        }
+          function compraocarina() {
+              document.getElementById('ocarina').style.display = 'block';
+               ocarina = 60;
+        }
+          function compramario() {
+              document.getElementById('mario').style.display = 'block';
+              mario = 60;
+        }
+          function compragoofi() {
+              document.getElementById('goofi').style.display = 'block';
+              goofi = 60;
+        }
+          function comprablastoise() {
+              document.getElementById('pokemon').style.display = 'block';
+              blastoise = 50;
+        }
+
+
+         function restadonkey() {
+            document.getElementById('donkey').style.display = 'none';
+             donkey = 0;
+        }
+         function restabanjo() {
+             document.getElementById('banjo').style.display = 'none';
+             banjo=0;
+        }
+          function restaocarina() {
+              document.getElementById('ocarina').style.display = 'none';
+               ocarina = 0;
+        }
+          function restamario() {
+              document.getElementById('mario').style.display = 'none';
+              mario = 0;
+        }
+          function restagoofi() {
+              document.getElementById('goofi').style.display = 'none';
+              goofi = 0;
+        }
+          function restablastoise() {
+              document.getElementById('pokemon').style.display = 'none';
+              blastoise = 0;
+        }
+
+
+
+
+        function precio() {
+            var todo = blastoise + banjo + ocarina + goofi + donkey + mario;
+            document.getElementById('total').innerHTML = todo+"€";
+            document.getElementById('tot').innerHTML = todo+"€";
+
+        }
+
+
+        function donkey1() {
+            document.getElementById('donkey3').style.display = 'block';
+            document.getElementById('ocarina3').style.display = 'none';
+            document.getElementById('blastoise3').style.display = 'none';
+            document.getElementById('goofi3').style.display = 'none';
+            document.getElementById('banjo3').style.display = 'none';
+            document.getElementById('mario3').style.display = 'none';
+
+
+        }
+
+        function ocarina1() {
+             document.getElementById('donkey3').style.display = 'none';
+            document.getElementById('ocarina3').style.display = 'block';
+            document.getElementById('blastoise3').style.display = 'none';
+            document.getElementById('goofi3').style.display = 'none';
+            document.getElementById('banjo3').style.display = 'none';
+            document.getElementById('mario3').style.display = 'none';
+
+        }
+        function banjo1() {
+             document.getElementById('donkey3').style.display = 'none';
+            document.getElementById('ocarina3').style.display = 'none';
+            document.getElementById('blastoise3').style.display = 'none';
+            document.getElementById('goofi3').style.display = 'none';
+            document.getElementById('banjo3').style.display = 'block';
+            document.getElementById('mario3').style.display = 'none';
+
+        }
+        function goofi1() {
+                 document.getElementById('donkey3').style.display = 'none';
+            document.getElementById('ocarina3').style.display = 'none';
+            document.getElementById('blastoise3').style.display = 'none';
+            document.getElementById('goofi3').style.display = 'block';
+            document.getElementById('banjo3').style.display = 'none';
+            document.getElementById('mario3').style.display = 'none';
+
+        }
+        function blastoise1() {
+                document.getElementById('donkey3').style.display = 'none';
+            document.getElementById('ocarina3').style.display = 'none';
+            document.getElementById('blastoise3').style.display = 'block';
+            document.getElementById('goofi3').style.display = 'none';
+            document.getElementById('banjo3').style.display = 'none';
+            document.getElementById('mario3').style.display = 'none';
+
+        }
+        function mario1() {
+          document.getElementById('donkey3').style.display = 'none';
+            document.getElementById('ocarina3').style.display = 'none';
+            document.getElementById('blastoise3').style.display = 'none';
+            document.getElementById('goofi3').style.display = 'none';
+            document.getElementById('banjo3').style.display = 'none';
+            document.getElementById('mario3').style.display = 'block';
+                }
+              function pay(){
+          document.getElementById('donkey3').style.display = 'none';
+            document.getElementById('ocarina3').style.display = 'none';
+            document.getElementById('blastoise3').style.display = 'none';
+            document.getElementById('goofi3').style.display = 'none';
+            document.getElementById('banjo3').style.display = 'none';
+            document.getElementById('mario3').style.display = 'none';
+                  document.getElementById('datos').style.display = 'block';
+                  document.getElementById('datoss').style.display = 'block';
+            document.getElementById('estado').style.display = 'block';
+                  document.getElementById('pp').style.display = 'block';
+                  document.getElementById('ppp').style.display = 'block';
+            document.getElementById('pago').style.display = 'block';
+                
+
+                }
+
+
+        var progreso = 10;
+        function progreso1() {
+            var usu = document.getElementById('usuario').value;
+            var contra = document.getElementById('contra').value;
+            var contra2 = document.getElementById('contra2').value;
+            var tarjeta = document.getElementById('tarjeta').value;
+           var caducidad = document.getElementById('caducidad').value;
+            var trasero = document.getElementById('trasero').value;
+    
+         
+            if (usu != '') { progreso += 10; };
+            if (contra != '') { progreso += 10; };
+            if (contra2 != '') { progreso += 10; };
+             if (caducidad != '') { progreso += 10; };
+            if (tarjeta != '') { progreso += 10; };
+           
+            if (trasero != '') { progreso += 10; };
+
+                if (contra != contra2) { progreso -= 50;};
+        
+
+            document.getElementById('pro').value = progreso;
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <div id="cabeza">
+            <img id="pac" src="pacman.png" alt="pac">
+            </div><div id="cabe1">
+            <h1>Games.com</h1>
+            </div>
+    </header>
+
+    <div id="lado">
+    
+
+    </div>
+
+    <section>
+
+       
+        <div>
+            <div class="djuego" onclick="comprablastoise(); precio();blastoise1()">
+                <img class="juegos" src="blastoise.jfif" alt="pokemon">
+                <div>
+                    <h3>Pokemon:</h3>
+                    <p>
+                        <strong>Año:</strong>1996    <br />
+                        <strong>Pais:</strong>Japon  <br />
+                        <strong>Precio:</strong> 50€
+                    </p>
+                </div>
+            </div>
+            <div class="djuego" onclick="compramario(); precio();mario1()">
+                <img class="juegos" src="mario.jfif" alt="mario">
+                <div>
+                    <h3>Super Mario 64</h3>
+                    <p>
+                        <strong>Año:</strong>1999    <br />
+                        <strong>Pais:</strong>Japon  <br />
+                        <strong>Precio:</strong> 60€
+                    </p>
+                </div>
+            </div>
+            <div class="djuego" onclick="compraocarina(); precio();ocarina1()">
+                <img class="juegos" src="ocarina.jfif" alt="zelda">
+
+                <div>
+                    <h3>Zelda ocarina of time</h3>
+                    <p>
+                        <strong>Año:</strong>1999    <br />
+                        <strong>Pais:</strong>Japon  <br />
+                        <strong>Precio:</strong> 60€
+                    </p>
+                </div>
+
+            </div>
+            <div class="djuego" onclick="compradonkey(); precio();donkey1()">
+                <img class="juegos" src="donkey.jfif" alt="donkey">
+
+                <div>
+                    <h3>Donkey Kong Country 2</h3>
+                    <p>
+                        <strong>Año:</strong>1993    <br />
+                        <strong>Pais:</strong>Japon  <br />
+                        <strong>Precio:</strong> 60€
+                    </p>
+                </div>
+
+            </div>
+            <div class="djuego" onclick="comprabanjo(); precio();banjo1()">
+                <img class="juegos" src="banjok.jfif" alt="banjo">
+
+                <div>
+                    <h3>Banjo kazooie</h3>
+                    <p>
+                        <strong>Año:</strong>1998    <br />
+                        <strong>Pais:</strong>Japon  <br />
+                        <strong>Precio:</strong> 50€
+
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="djuego" onclick="compragoofi(); precio();goofi1()">
+                <img class="juegos" src="goofi.jfif" alt="goofie">
+
+                <div>
+                    <h3>Goofy e hijo</h3>
+                    <p>
+                        <strong>Año:</strong>1992    <br />
+                        <strong>Pais:</strong>Japon  <br />
+                        <strong>Precio:</strong> 30€
+                    </p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <aside>
+
+        <div>
+            <img class="ljuegos" id="donkey" src="donkey.jfif" alt="donkey" onclick="restadonkey();precio()">
+            <img class="ljuegos" id="pokemon" src="blastoise.jfif" alt="pokemon" onclick="restablastoise();precio()">
+            <img class="ljuegos" id="banjo" src="banjok.jfif" alt="banjo" onclick="restabanjo();precio()">
+            <img class="ljuegos" id="ocarina" src="ocarina.jfif" alt="ocarina" onclick="restaocarina();precio()">
+            <img class="ljuegos" id="mario" src="mario.jfif" alt="mario" onclick="restamario();precio()">
+            <img class="ljuegos" id="goofi" src="goofi.jfif" alt="goofi" onclick="restagoofi();precio()">
+        </div>
+
+        <div>
+
+            <Strong>Total a pagar:</Strong>
+            <h2 id="total">0€</h2>
+
+        </div>
+
+        <div class="pago">
+            <input id="boton" type="button" name="validar" value="Pagar" onclick="pay()" />
+        </div>
+
+    </aside>
+
+
+    <footer>
+        <h4></h4>
+        <div id="donkey3">
+
+            <img src="donkey2.png" class="despues" />
+
+            <h2>Donkey kong Country 2</h2>
+            <p>
+                Donkey Kong Country 2: La búsqueda de Diddy Kong es la secuela del exitoso juego del Super Nintendo Entertainment System, Donkey Kong Country. Desarrollado por Rareware y utilizando la misma tecnología 3D prerenderizado que su predecesor, fue lanzado al mercado en el año 1995, cosechando un notable éxito y dejando de lado aquel comentario de las segundas partes nunca fueron buenas. Argumento
+                Todo comienza mientras Donkey Kong se encuentra tomando el sol en la playa, cuando de repente un avión comienza a sobrevolar su cabeza (The Flying Krock), de este comienzan a descender kremlings secuaces de Kaptain K. Rool los cuales lo secuestran y lo llevan preso a lo alto de la isla cocodrilo. Cuando Diddy Kong llega a la playa donde estaba su compañero se encuentra con que Donkey ha desaparecido y en su lugar hay una nota en la que Kaptain K. Rool les pide como rescate que les entreguen todas las preciadas bananas que el y Donkey Kong habían recuperado de sus garras en la primera entrega. Tras reunirse todo el "Kong Clan" Cranky Kong propone hacer el pago, a lo cual Diddy Kong se niega profundamente, y entonces decide emprender un viaje a la isla cocodrilo junto con su novia Dixie Kong para liberar a Donkey Kong.
+                Argumento
+                Todo comienza mientras Donkey Kong se encuentra tomando el sol en la playa, cuando de repente un avión comienza a sobrevolar su cabeza (The Flying Krock), de este comienzan a descender kremlings secuaces de Kaptain K. Rool los cuales lo secuestran y lo llevan preso a lo alto de la isla cocodrilo. Cuando Diddy Kong llega a la playa donde estaba su compañero se encuentra con que Donkey ha desaparecido y en su lugar hay una nota en la que Kaptain K. Rool les pide como rescate que les entreguen todas las preciadas bananas que el y Donkey Kong habían recuperado de sus garras en la primera entrega. Tras reunirse todo el "Kong Clan" Cranky Kong propone hacer el pago, a lo cual Diddy Kong se niega profundamente, y entonces decide emprender un viaje a la isla cocodrilo junto con su novia Dixie Kong para liberar a Donkey Kong.
+            </p>
+
+        </div>
+
+
+        <div id="blastoise3">
+
+            <img src="ash.jfif" class="despues" />
+
+            <h2>Pokemon</h2>
+            <p>
+                Pokémon (ポケモン Pokemon?) es una franquicia de medios que originalmente comenzó como un videojuego RPG, pero debido a su popularidad ha logrado expandirse a otros medios de entretenimiento como series de televisión, juegos de cartas, ropa, entre otros, convirtiéndose en una marca que es reconocida en el mercado mundial. Las ventas de videojuegos hasta el 1 de diciembre de 2006 habían alcanzado una cantidad de 340 millones de ejemplares (incluyendo la venta de la versión Pikachu de la consola Nintendo 64),1​ logrando ocupar el segundo lugar de las sagas de videojuegos más vendidos de Nintendo.2​ La franquicia celebró su décimo aniversario el 27 de febrero de 2006.3​4
+
+                La saga de videojuegos es desarrollada por la compañía programadora de software japonesa Game Freak, con personajes creados por Satoshi Tajiri para la empresa de juguetes Creatures Inc., y a su vez distribuida por Nintendo. La misión en estos juegos es capturar y entrenar a los pokémon (criaturas cuya denominación da nombre al juego), que hasta la fecha alcanzan el número de 890. La posibilidad de intercambiarlos le hizo conseguir una popularidad que se plasmó en un éxito de ventas y la consiguiente aparición de una serie animada, películas y diverso merchandising como peluches, juguetes y cartas.
+
+                La producción de los videojuegos, serie de anime y demás material para su distribución en occidente fue realizada en Estados Unidos por 4Kids Entertainment hasta noviembre de 2005, momento en que decidió no renovar su contrato con Pokémon USA (una subsidiaria de Pokémon Company). Actualmente esta supervisa todo lo referente al material de Pokémon en su distribución en occidente.5
+            </p>
+
+        </div>
+
+        <div id="banjo3">
+
+            <img src="banjo.jfif" class="despues" />
+
+            <h2>Banjo-kazooie</h2>
+            <p>
+                Banjo-Kazooie (バンジョーとカズーイの大冒険) es un videojuego en 3D del género de plataformas para Nintendo 64. Tiene una secuela llamada Banjo-Tooie. Fue desarrollado por Rareware y publicado por Nintendo en 1998. Fue conocido como Project Dream hasta que en su primera demostración en el E3 de 1997, recibió una cantidad significativa de rumores, en parte debido a ser puesto como el juego que sería al N64 lo que Donkey Kong Country era al SNES en términos de un adelanto en gráficos. Originalmente, fue supuesto que sería lanzado como un juego de día de fiesta de Nintendo de América para 1997 con una promoción junto a un juguete en Taco Bell y Burger King, pero Rare decidió retrasar el juego varios meses. Diddy Kong Racing tomó su lugar y con Banjo como personaje seleccionable en el juego, lo cual le dio un vuelco a la franquicia de Donkey Kong. Banjo-Kazooie llegaría a convertirse en uno de los juegos más populares de la consola.
+
+                Las estrellas del juego son un oso y una ave, Banjo y Kazooie, quienes emprenden la búsqueda por la hermana de Banjo, Tooty, quien fue secuestrada por la bruja Gruntilda. A lo largo del viaje, Banjo y Kazooie recibirán la ayuda de Mumbo Jumbo el chamán y Bottles el topo, así como de otros personajes con papeles más pequeños.
+
+                En las 1999 Interactive Achievement Awards, Banjo-Kazooie ganó las categorías "Console Action/Adventure" y "Art Direction", y fue nominado para el "Console Adventure Game of the Year" y el "Game of the Year".
+            </p>
+
+        </div>
+
+        <div id="mario3">
+
+            <img src="mario1.jfif" class="despues" />
+
+            <h2>Super mario 64</h2>
+            <p>
+                Super Mario 64 (スーパーマリオ64 Sūpā Mario Rokujūyon?) es un videojuego de plataformas para la videoconsola Nintendo 64, (aunque también hay una versión para Nintendo DS) desarrollado por Nintendo Entertainment Analysis and Development y publicado por la propia Nintendo. Su debut en Japón fue el 23 de junio de 1996, en América del Norte el 29 de septiembre de 1996 y en Europa el 1 de marzo de 1997.5​ Junto con Pilotwings 64, fue uno de los títulos de lanzamiento para la consola.6​ Como el juego principal del nuevo sistema de Nintendo, manejó las primeras ventas de la Nintendo 64, y ha llegado a vender más de 11 millones de copias en total,7​8​ sin incluir las ventas en la Consola Virtual de la Wii.
+
+                Super Mario 64, el primer juego de plataformas en 3D de la saga de Mario, estableció un nuevo arquetipo para el género (gracias a su forma de juego, totalmente libre, y el formato de sus gráficos 3D poligonales mezclados con sprites bidimensionales) tal como Super Mario Bros. lo hizo para los juegos de plataformas en dos dimensiones. El juego ha sido llamado «revolucionario» y no sólo ha influenciado a muchos grandes juegos en su género, sino que también ha tenido un duradero impacto en los juegos 3D en general.9​10​11
+
+                Al cambiar de dos a tres dimensiones, Super Mario 64 reemplazó la tradicional pista de obstáculos de los juegos de plataformas por vastos mundos en los que el jugador debe completar múltiples y diversas misiones, colocando un énfasis en la exploración. Al hacer esto, logró preservar el «sentimiento» de los anteriores juegos de Mario al incluir muchos de sus elementos de juego y personajes.11​ Es considerado por muchos críticos y fanes como uno de los mejores videojuegos de todos los tiempos.12​13​14​15​16​17
+            </p>
+
+        </div>
+
+        <div id="goofi3">
+
+            <img src="goofie.jfif" class="despues" />
+
+            <h2>Goofie e hijo</h2>
+            <p>
+                Battle pirates and take on other bad guys in this exciting video game. Take on the role of Goofy or Max as the Goof Troop pursues the evil henchman Keelhaul Pete in Disney's Goof Troop for Nintendo Super NES. In your pursuit to save the crew of Goofy's ship, you will ward off knife-throwing pirates and other enemies as you solve tricky puzzles, dig for buried treasure, cross bridges, and complete other tasks in the five stages of the video game. Gamers of any age can enjoy playing, as it is rated for everyone. Rescue the crew by yourself in single-player mode or gave fun playing with a friend in two-player mode.
+                Battle pirates and take on other bad guys in this exciting video game. Take on the role of Goofy or Max as the Goof Troop pursues the evil henchman Keelhaul Pete in Disney's Goof Troop for Nintendo Super NES. In your pursuit to save the crew of Goofy's ship, you will ward off knife-throwing pirates and other enemies as you solve tricky puzzles, dig for buried treasure, cross bridges, and complete other tasks in the five stages of the video game. Gamers of any age can enjoy playing, as it is rated for everyone. Rescue the crew by yourself in single-player mode or gave fun playing with a friend in two-player mode.
+                Battle pirates and take on other bad guys in this exciting video game. Take on the role of Goofy or Max as the Goof Troop pursues the evil henchman Keelhaul Pete in Disney's Goof Troop for Nintendo Super NES. In your pursuit to save the crew of Goofy's ship, you will ward off knife-throwing pirates and other enemies as you solve tricky puzzles, dig for buried treasure, cross bridges, and complete other tasks in the five stages of the video game. Gamers of any age can enjoy playing, as it is rated for everyone. Rescue the crew by yourself in single-player mode or gave fun playing with a friend in two-player mode.
+                Battle pirates and take on other bad guys in this exciting video game. Take on the role of Goofy or Max as the Goof Troop pursues the evil henchman Keelhaul Pete in Disney's Goof Troop for Nintendo Super NES. In your pursuit to save the crew of Goofy's ship, you will ward off knife-throwing pirates and other enemies as you solve tricky puzzles, dig for buried treasure, cross bridges, and complete other tasks in the five stages of the video game. Gamers of any age can enjoy playing, as it is rated for everyone. Rescue the crew by yourself in single-player mode or gave fun playing with a friend in two-player mode.
+                Battle pirates and take on other bad guys in this exciting video game. Take on the role of Goofy or Max as the Goof Troop pursues the evil henchman Keelhaul Pete in Disney's Goof Troop for Nintendo Super NES. In your pursuit to save the crew of Goofy's ship, you will ward off knife-throwing pirates and other enemies as you solve tricky puzzles, dig for buried treasure, cross bridges, and complete other tasks in the five stages of the video game. Gamers of any age can enjoy playing, as it is rated for everyone. Rescue the crew by yourself in single-player mode or gave fun playing with a friend in two-player mode.
+                Battle pirates and take on other bad guys in this exciting video game. Take on the role of Goofy or Max as the Goof Troop pursues the evil henchman Keelhaul Pete in Disney's Goof Troop for Nintendo Super NES. In your pursuit to save the crew of Goofy's ship, you will ward off knife-throwing pirates and other enemies as you solve tricky puzzles, dig for buried treasure, cross bridges, and complete other tasks in the five stages of the video game. Gamers of any age can enjoy playing, as it is rated for everyone. Rescue the crew by yourself in single-player mode or gave fun playing with a friend in two-player mode.
+                Battle pirates and take on other bad guys in this exciting video game. Take on the role of Goofy or Max as the Goof Troop pursues the evil henchman Keelhaul Pete in Disney's Goof Troop for Nintendo Super NES. In your pursuit to save the crew of Goofy's ship, you will ward off knife-throwing pirates and other enemies as you solve tricky puzzles, dig for buried treasure, cross bridges, and complete other tasks in the five stages of the video game. Gamers of any age can enjoy playing, as it is rated for everyone. Rescue the crew by yourself in single-player mode or gave fun playing with a friend in two-player mode.
+
+            </p>
+
+        </div>
+
+
+        <div id="ocarina3">
+
+            <img src="zelda.jfif" class="despues" />
+
+            <h2>Zelda ocarina of time</h2>
+            <p>
+                The Legend of Zelda: Ocarina of Time (ゼルダの伝説でんせつ: 時ときのオカリナ Zeruda no Densetsu: Toki no Okarina?, lit. «La Leyenda de Zelda: Ocarina del Tiempo») es un videojuego de acción-aventura de 1998 desarrollado por la filial Nintendo EAD y publicado por Nintendo para la consola Nintendo 64. Fue lanzado en Japón el 21 de noviembre de 1998,7​ mientras que a Norteamérica llegó dos días después, el 23 de noviembre,8​ y en Europa se estrenó el 11 de diciembre de ese mismo año.9​ Para el caso de Sudamérica, fue presentado en Chile el 21 de noviembre de 1998 en un evento especial para periodistas13​. A pesar de que en un inicio los diseñadores planeaban lanzar el juego para el periférico Nintendo 64DD, al final se optó por diseñarlo para un cartucho de 256 megabits (igual a 32 megabytes), que eran los de mayor capacidad producidos por Nintendo en ese entonces.14​ Ocarina of Time es el quinto lanzamiento de la franquicia The Legend of Zelda, y se convirtió en el primero de la serie en hacer uso de gráficos 3D. Su sucesor, The Legend of Zelda: Majora's Mask, se estrenó dos años después.
+
+                La historia del juego se enfoca en el joven héroe Link, quien emprende una aventura en el reino de Hyrule para detener a Ganondorf, rey de la tribu Gerudo, antes de que encuentre la Trifuerza, una reliquia sagrada capaz de concederle cualquier deseo a su poseedor. Para ello, debe viajar a través del tiempo y explorar varios templos con el fin de despertar a algunos sabios que tienen el poder para aprisionar de forma definitiva a Ganondorf. Se ha de mencionar que la música juega un papel muy importante en la trama del juego, puesto que el jugador tiene que aprender a tocar varias canciones con una ocarina. Incluso, la popularidad de Ocarina of Time incrementó de forma significativa las ventas de ocarinas reales.15
+
+            </p>
+
+        </div>
+
+
+        <div id="pago">
+            <form id="form1" action="php.1" name="compra" method="get">
+
+                <div id="datos">
+                    <fieldset>
+                        <legend>Datos de la aplicación</legend>
+
+                        <label class="rojo">Usuario</label>    <input type="text" name="usuario" onchange="progreso1()"  id="usuario" required autofocus placeholder="Usuario" /><br>
+                        <label class="rojo">Contraseña</label> <input type="password" name="Contrasenya" onchange="progreso1()"  id="contra" required placeholder="Contraseña" /><br>
+                        <label class="rojo">Repitela</label>   <input type="password" name="Contrasenya2" onchange="progreso1()" id="contra2" required placeholder="Contraseña2" /><br>
+                        <label class="invisible"></label><br>
+
+                    </fieldset>
+                </div>
+
+
+
+
+                <div id="datoss">
+                    <fieldset>
+                        <legend>Total a pagar</legend>
+                <div id="pp">
+                <h3 id="tot">0€</h3>
+               </div>
+         <div id="ppp">
+            <label>Nº</label>         <input type="text" name="Datos" id="tarjeta" onchange="progreso1()" placeholder="Numero de tarjeta" /><br>
+            <label>Expira</label>     <input type="date" min="2020-01-26" max="2040-01"  onchange="progreso1()" id="caducidad" name="Datos" /><br>
+            <label>Atras</label>      <input type="text" name="Datos" id="trasero" onchange="progreso1()" placeholder="codigo de atras" /><br>
+        </div>
+        </fieldset>
+        </div>
+
+
+        <div id="estado">
+            <fieldset>
+                <legend>Estado del proceso</legend>
+
+                <progress id="pro" value="0" max="100"></progress>
+                <br />
+                <input id="paga" type="submit" name="validar" value="Pagar" />
+        
+</fieldset>
+        </div>
+
+
+
+
+
+        </form>
+        </div>
+
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
